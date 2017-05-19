@@ -1,8 +1,7 @@
 'use strict';
-var chai = require('chai');
-var expect = chai.expect;
-var should = chai.should;
-var roman = require('./../roman.js');
+const chai = require('chai');
+const expect = chai.expect;
+const roman = require('./../roman.js');
 
 describe('roman numercy parse', () => {
     describe('getNumber function', () => {

@@ -47,7 +47,7 @@ app.post('/getRoman', (req, res) => {
     }
     
     //only checking values between 1 and 3999
-    if (number < 1 || number > 3999) {
+    if (req.body.number < 1 || req.body.number > 3999) {
         return res.status(500).send('Number must be between 1 and 3999');
     }
 
@@ -58,4 +58,14 @@ app.post('/getRoman', (req, res) => {
     res.json({ romanChars }).status(200);
 });
 
+app.get('/*', (req, res) => {
+    res.status(500).send('Endpoint does not exist');
+});
+
+app.post('/*', (req, res) => {
+    res.status(500).send('Endpoint does not exist');
+});
+
 server(app);
+
+module.exports = app;

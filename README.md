@@ -1,5 +1,10 @@
 # Roman Numerals
 
+This is a express web server with two endpoints:
+* getNumber
+* getRoman
+
+
 ### How do I get set up? ###
 
 ```
