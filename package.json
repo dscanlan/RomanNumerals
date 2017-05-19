@@ -1,0 +1,17 @@
+{
+  "name": "bbc",
+  "version": "1.0.0",
+  "description": "tests",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "dscanlan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "http": "0.0.0",
+    "lodash": "^4.17.4",
+    "mocha": "^3.4.1"
+  }
+}
