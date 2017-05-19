@@ -58,18 +58,4 @@ app.post('/getRoman', (req, res) => {
     res.json({ romanChars }).status(200);
 });
 
-// console.log('1111',roman.getChars(1111));
-// console.log('10',roman.getChars(10));
-// console.log('100',roman.getChars(100));
-// console.log('9',roman.getChars('9'));
-// console.log('1900',roman.getChars('1900'));
-// console.log('3999',roman.getChars('3999'));
-// console.log('39a9',roman.getChars('39a9'));
-
-// console.log('1', roman.getNumber('I'));
-// console.log('MMMCMXCIX', roman.getNumber('MMMCMXCIX'));
-// console.log('23', roman.getNumber('23'));
-// console.log('A', roman.getNumber('A'));
-console.log('XIIII', roman.getNumber('XIIII'))
-
 server(app);
