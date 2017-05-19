@@ -41,6 +41,11 @@ describe('roman numercy parse', () => {
             expect(result).to.be.equal(14);
             done();
         });
+        it('AAAA should return 0', (done) => {
+            const result = roman.getNumber('AAAA');
+            expect(result).to.be.equal(0);
+            done();
+        });
     });
     describe('getChars function', () => {
         it('should not check numbers under 1', (done) => {
